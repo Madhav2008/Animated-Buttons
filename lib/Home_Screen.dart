@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 likeBuilder: ((isTapped) {
                   return Icon(
                     Icons.mail,
-                    color: isTapped ? COlors.green: Colors.grey,
+                    color: isTapped ? Colors.green: Colors.grey,
                     size: 80,
                   );
                 }),
