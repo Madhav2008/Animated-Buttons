@@ -152,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                       );
-                    } else
+                    } else {
                       result = Text(
                         count! >= 1000
                             ? (count / 1000.0).toStringAsFixed(1) + 'k'
@@ -163,6 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                       );
+                    }
                     return result;
                   },
                 ),
