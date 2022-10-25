@@ -47,12 +47,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
               LikeButton(
-                size: 80,circleColor:
-              CircleColor(start: Color(0xff00ddff), end: Color(0xff0099cc)),
-          bubblesColor: BubblesColor(
-            dotPrimaryColor: Color(0xff33b5e5),
-            dotSecondaryColor: Color(0xff0099cc),
-          ),
+                size: 80,
+                circleColor: CircleColor(
+                    start: Color(0xff00ddff), end: Color(0xff0099cc)),
+                bubblesColor: BubblesColor(
+                  dotPrimaryColor: Color(0xff33b5e5),
+                  dotSecondaryColor: Color(0xff0099cc),
+                ),
                 likeCount: numberOfLikes,
                 countPostion: CountPostion.bottom,
                 likeBuilder: ((isTapped) {
