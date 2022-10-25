@@ -154,6 +154,69 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
+          Row(
+            children: [
+              LikeButton(
+                size: 80,
+                likeCount: numberOfLikes,
+                countPostion: CountPostion.bottom,
+                countBuilder: (count, isLiked, text) {
+                  return Text(
+                    text,
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  );
+                },
+              ),
+              LikeButton(
+                size: 80,
+                likeCount: numberOfLikes,
+                countPostion: CountPostion.bottom,
+                likeBuilder: ((isTapped) {
+                  return Icon(
+                    Icons.bookmark,
+                    color: isTapped ? Colors.deepPurple : Colors.grey,
+                    size: 80,
+                  );
+                }),
+                countBuilder: (count, isLiked, text) {
+                  return Text(
+                    text,
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  );
+                },
+              ),
+              LikeButton(
+                size: 80,
+                likeCount: numberOfLikes,
+                countPostion: CountPostion.bottom,
+                likeBuilder: ((isTapped) {
+                  return Icon(
+                    Icons.bookmark,
+                    color: isTapped ? Colors.deepPurple : Colors.grey,
+                    size: 80,
+                  );
+                }),
+                countBuilder: (count, isLiked, text) {
+                  return Text(
+                    text,
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
         ],
       ),
     );
