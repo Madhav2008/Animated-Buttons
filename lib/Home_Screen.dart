@@ -145,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Widget result;
                     if (count == 0) {
                       result = const Text(
-                        'love',
+                        'Click Me',
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 24,
