@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int numberOfLikes = 120;
 
-  
+  Gradient
 
   @override
   Widget build(BuildContext context) {
