@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         centerTitle: true,
       ),
-      body: Column(mainAxisAlignment: ,
+      body: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             children: [
