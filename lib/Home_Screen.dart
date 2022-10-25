@@ -270,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     dotSecondaryColor: Colors.blueGrey.shade300,
                   ),
                   likeCount: numberOfLikes,
-                  countPostion: CountPostion.bottom,
+                  countPostion: CountPostion.right,
                   likeBuilder: ((isTapped) {
                     return Icon(
                       Icons.mail_outline,
