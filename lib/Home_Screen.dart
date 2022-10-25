@@ -339,7 +339,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   dotSecondaryColor: Colors.deepPurple.shade300,
                 ),
                 likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
+                countPostion: CountPostion.top,
                 likeBuilder: ((isTapped) {
                   return Icon(
                     Icons.camera_alt_outlined,
