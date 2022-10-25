@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int numberOfLikes = 120;
 
-  Gradient gmail
+  Gradient gmail =
 
   @override
   Widget build(BuildContext context) {
