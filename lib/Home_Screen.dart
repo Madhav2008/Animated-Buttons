@@ -197,7 +197,7 @@ class _HomeScreenState extends State<HomeScreen> {
                colors: [Colors.purple, Colors.blue],
               begin: Alignment.bottomLeft,
                end: Alignment.topRight,
-          ), Colors.grey,
+          ): Colors.grey,
                     size: 80,
                   );
                 }),
