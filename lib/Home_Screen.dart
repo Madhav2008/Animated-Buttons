@@ -311,7 +311,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
+                padding: const EdgeInsets.only(right: 20.0),
                 child: LikeButton(
                   size: 80,
                   circleColor: const CircleColor(
