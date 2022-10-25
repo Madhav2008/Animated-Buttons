@@ -340,7 +340,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 },
               ),
-              const SizedBox(),
+              const SizedBox(width: ,),
               LikeButton(
                 size: 80,
                 circleColor: const CircleColor(
