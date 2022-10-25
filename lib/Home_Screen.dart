@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               LikeButton(
                 size: 80,
-                circleColor: const CircleColor(
+                circleColor: CircleColor(
                   start: Colors.brown,
                   end: Colors.brown.shade600,
                 ),
