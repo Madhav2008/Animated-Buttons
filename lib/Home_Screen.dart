@@ -141,7 +141,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       size: 80,
                     );
                   }),
-                  countBuilder: (count, isLiked, text) {Widget result;
+                  countBuilder: (count, isLiked, text) {
+                    Widget result;
                     if (count == 0) {
                       Text(
                         'love',
