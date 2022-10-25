@@ -144,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   countBuilder: (count, isLiked, text) {
                     Widget result;
                     if (count == 0) {
-                      result = Text(
+                      result = const Text(
                         'love',
                         style: const TextStyle(
                           color: Colors.black,
