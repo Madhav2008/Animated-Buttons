@@ -143,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   }),
                   countBuilder: (count, isLiked, text) {
                     if (count == 0) {
-                      result = Text(
+                      Text(
                         'love',
                         style: TextStyle(color: color),
                       );
