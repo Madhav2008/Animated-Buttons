@@ -113,12 +113,12 @@ class _HomeScreenState extends State<HomeScreen> {
               LikeButton(
                 size: 80,
                 circleColor: const CircleColor(
-                  start: Color(0xff00ddff),
-                  end: Color(0xff0099cc),
+                  start: Colors.deepPurple,
+                  end: Colors.deepPurpleAccent,
                 ),
-                bubblesColor: const BubblesColor(
-                  dotPrimaryColor: Color(0xff33b5e5),
-                  dotSecondaryColor: Color(0xff0099cc),
+                bubblesColor: BubblesColor(
+                  dotPrimaryColor: Colors.deepPurple.shade200,
+                  dotSecondaryColor: Colors.deepPurple.shade300,
                 ),
                 likeCount: numberOfLikes,
                 countPostion: CountPostion.bottom,
