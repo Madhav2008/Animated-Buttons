@@ -28,85 +28,88 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              LikeButton(
-                size: 80,
-                likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
-                countBuilder: (count, isLiked, text) {
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
-              ),
-              LikeButton(
-                size: 80,
-                circleColor: CircleColor(
-                  start: Colors.brown,
-                  end: Colors.brown.shade600,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                LikeButton(
+                  size: 80,
+                  likeCount: numberOfLikes,
+                  countPostion: CountPostion.bottom,
+                  countBuilder: (count, isLiked, text) {
+                    return Text(
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  },
                 ),
-                bubblesColor: BubblesColor(
-                  dotPrimaryColor: Colors.brown.shade200,
-                  dotSecondaryColor: Colors.brown.shade300,
+                LikeButton(
+                  size: 80,
+                  circleColor: CircleColor(
+                    start: Colors.brown,
+                    end: Colors.brown.shade600,
+                  ),
+                  bubblesColor: BubblesColor(
+                    dotPrimaryColor: Colors.brown.shade200,
+                    dotSecondaryColor: Colors.brown.shade300,
+                  ),
+                  likeCount: numberOfLikes,
+                  countPostion: CountPostion.bottom,
+                  likeBuilder: ((isTapped) {
+                    return Icon(
+                      Icons.home,
+                      color: isTapped ? Colors.brown : Colors.grey,
+                      size: 80,
+                    );
+                  }),
+                  countBuilder: (count, isLiked, text) {
+                    return Text(
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  },
                 ),
-                likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
-                likeBuilder: ((isTapped) {
-                  return Icon(
-                    Icons.home,
-                    color: isTapped ? Colors.brown : Colors.grey,
-                    size: 80,
-                  );
-                }),
-                countBuilder: (count, isLiked, text) {
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
-              ),
-              LikeButton(
-                size: 80,
-                circleColor: CircleColor(
-                  start: Colors.greenAccent,
-                  end: Colors.greenAccent.shade700,
+                LikeButton(
+                  size: 80,
+                  circleColor: CircleColor(
+                    start: Colors.greenAccent,
+                    end: Colors.greenAccent.shade700,
+                  ),
+                  bubblesColor: BubblesColor(
+                    dotPrimaryColor: Colors.greenAccent.shade200,
+                    dotSecondaryColor: Colors.greenAccent.shade400,
+                  ),
+                  likeCount: numberOfLikes,
+                  countPostion: CountPostion.bottom,
+                  likeBuilder: ((isTapped) {
+                    return Icon(
+                      Icons.android,
+                      color: isTapped ? Colors.greenAccent : Colors.grey,
+                      size: 80,
+                    );
+                  }),
+                  countBuilder: (count, isLiked, text) {
+                    return Text(
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  },
                 ),
-                bubblesColor: BubblesColor(
-                  dotPrimaryColor: Colors.greenAccent.shade200,
-                  dotSecondaryColor: Colors.greenAccent.shade400,
-                ),
-                likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
-                likeBuilder: ((isTapped) {
-                  return Icon(
-                    Icons.android,
-                    color: isTapped ? Colors.greenAccent : Colors.grey,
-                    size: 80,
-                  );
-                }),
-                countBuilder: (count, isLiked, text) {
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
-              ),
-            ],
+              ],
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
