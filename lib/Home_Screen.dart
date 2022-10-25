@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.only(bottom: .0),
+            padding: const EdgeInsets.only(bottom: 5.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
