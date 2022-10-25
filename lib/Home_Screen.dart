@@ -238,7 +238,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 size: 80,
                 circleColor: CircleColor(
                   start: Colors.blueGrey,
-                  end: Colors.blueGrey[600],
+                  end: Colors.blueGrey.shade600,
                 ),
                 bubblesColor: BubblesColor(
                   dotPrimaryColor: Colors.deepPurple.shade200,
