@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 countPostion: CountPostion.bottom,
                 likeBuilder: ((isTapped) {
                   return Icon(
-                    Icons.bookmark,
+                    Icons.tag_faces_rounded,
                     color: isTapped ? Colors.deepPurple : Colors.grey,
                     size: 80,
                   );
