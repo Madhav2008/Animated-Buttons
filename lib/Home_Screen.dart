@@ -13,7 +13,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int numberOfLikes = 120;
 
-  Gradient gmail = 
+  Gradient gmail = gradient: LinearGradient(
+               colors: [Colors.purple, Colors.blue],
+              begin: Alignment.bottomLeft,
+               end: Alignment.topRight,
+          )
 
   @override
   Widget build(BuildContext context) {
