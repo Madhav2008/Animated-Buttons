@@ -141,7 +141,18 @@ class _HomeScreenState extends State<HomeScreen> {
                       size: 80,
                     );
                   }),
-                  countBuilder: (count, isLiked, text) {
+                  countBuilder: (count, isLiked, text) {if (count == 0) {
+                result = Text(
+                  'love',
+                  style: TextStyle(color: color),
+                );
+              } else
+                result = Text(
+                  count! >= 1000
+                      ? (count / 1000.0).toStringAsFixed(1) + 'k'
+                      : text,
+                  style: TextStyle(color: color),
+                );
                     return Text(
                       text,
                       style: const TextStyle(
