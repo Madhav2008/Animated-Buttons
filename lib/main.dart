@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Animated Buttons',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
       home: const HomeScreen(),
     );
