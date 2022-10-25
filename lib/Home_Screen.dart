@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(color: color),
                       );
                     } else
-                       Text(
+                      Text(
                         count! >= 1000
                             ? (count / 1000.0).toStringAsFixed(1) + 'k'
                             : text,
