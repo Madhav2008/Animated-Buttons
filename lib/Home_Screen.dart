@@ -111,100 +111,103 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              LikeButton(
-                size: 80,
-                circleColor: const CircleColor(
-                  start: Colors.red,
-                  end: Colors.redAccent,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                LikeButton(
+                  size: 80,
+                  circleColor: const CircleColor(
+                    start: Colors.red,
+                    end: Colors.redAccent,
+                  ),
+                  bubblesColor: BubblesColor(
+                    dotPrimaryColor: Colors.red.shade200,
+                    dotSecondaryColor: Colors.red.shade300,
+                  ),
+                  likeCount: numberOfLikes,
+                  countPostion: CountPostion.bottom,
+                  likeBuilder: ((isTapped) {
+                    return Icon(
+                      Icons.flag,
+                      color: isTapped ? Colors.red : Colors.grey,
+                      size: 80,
+                    );
+                  }),
+                  countBuilder: (count, isLiked, text) {
+                    return Text(
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  },
                 ),
-                bubblesColor: BubblesColor(
-                  dotPrimaryColor: Colors.red.shade200,
-                  dotSecondaryColor: Colors.red.shade300,
+                LikeButton(
+                  size: 80,
+                  circleColor: const CircleColor(
+                    start: Colors.blue,
+                    end: Colors.blueAccent,
+                  ),
+                  bubblesColor: BubblesColor(
+                    dotPrimaryColor: Colors.blue.shade200,
+                    dotSecondaryColor: Colors.blue.shade300,
+                  ),
+                  likeCount: numberOfLikes,
+                  countPostion: CountPostion.bottom,
+                  likeBuilder: ((isTapped) {
+                    return Icon(
+                      Icons.tag_faces_outlined,
+                      color: isTapped ? Colors.blue : Colors.grey,
+                      size: 80,
+                    );
+                  }),
+                  countBuilder: (count, isLiked, text) {
+                    return Text(
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  },
                 ),
-                likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
-                likeBuilder: ((isTapped) {
-                  return Icon(
-                    Icons.flag,
-                    color: isTapped ? Colors.red : Colors.grey,
-                    size: 80,
-                  );
-                }),
-                countBuilder: (count, isLiked, text) {
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
-              ),
-              LikeButton(
-                size: 80,
-                circleColor: const CircleColor(
-                  start: Colors.blue,
-                  end: Colors.blueAccent,
+                LikeButton(
+                  size: 80,
+                  circleColor: const CircleColor(
+                    start: Colors.black,
+                    end: Colors.black87,
+                  ),
+                  bubblesColor: const BubblesColor(
+                    dotPrimaryColor: Colors.black45,
+                    dotSecondaryColor: Colors.black54,
+                  ),
+                  likeCount: numberOfLikes,
+                  countPostion: CountPostion.bottom,
+                  likeBuilder: ((isTapped) {
+                    return Icon(
+                      Icons.cloud,
+                      color: isTapped ? Colors.black : Colors.grey,
+                      size: 80,
+                    );
+                  }),
+                  countBuilder: (count, isLiked, text) {
+                    return Text(
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  },
                 ),
-                bubblesColor: BubblesColor(
-                  dotPrimaryColor: Colors.blue.shade200,
-                  dotSecondaryColor: Colors.blue.shade300,
-                ),
-                likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
-                likeBuilder: ((isTapped) {
-                  return Icon(
-                    Icons.tag_faces_outlined,
-                    color: isTapped ? Colors.blue : Colors.grey,
-                    size: 80,
-                  );
-                }),
-                countBuilder: (count, isLiked, text) {
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
-              ),
-              LikeButton(
-                size: 80,
-                circleColor: const CircleColor(
-                  start: Colors.black,
-                  end: Colors.black87,
-                ),
-                bubblesColor: const BubblesColor(
-                  dotPrimaryColor: Colors.black45,
-                  dotSecondaryColor: Colors.black54,
-                ),
-                likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
-                likeBuilder: ((isTapped) {
-                  return Icon(
-                    Icons.cloud,
-                    color: isTapped ? Colors.black : Colors.grey,
-                    size: 80,
-                  );
-                }),
-                countBuilder: (count, isLiked, text) {
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
-              ),
-            ],
+              ],
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
