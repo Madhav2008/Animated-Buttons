@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 bubblesColor: BubblesColor(
                   dotPrimaryColor: Colors.blue.shade200,
-                  dotSecondaryColor: Colors.deepPurple.shade300,
+                  dotSecondaryColor: Colors.blue.shade300,
                 ),
                 likeCount: numberOfLikes,
                 countPostion: CountPostion.bottom,
