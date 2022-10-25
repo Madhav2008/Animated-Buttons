@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
-      ),builder: (BuildContext c, Widget? w) {
+      ),
+      builder: (BuildContext c, Widget? w) {
         final MediaQueryData data = MediaQuery.of(c);
         return MediaQuery(
           data: data.copyWith(textScaleFactor: 1.0),
