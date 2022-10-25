@@ -215,7 +215,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 likeBuilder: ((isTapped) {
                   return Icon(
                     Icons.currency_rupee,
-                    color: isTapped ? Colors.orange : Colors.grey,
+                    color: isTapped ? Colors.amber : Colors.grey,
                     size: 80,
                   );
                 }),
