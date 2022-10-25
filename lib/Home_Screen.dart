@@ -147,10 +147,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       result = Text(
                         'love',
                         style: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
                       );
                     } else
                       result = Text(
