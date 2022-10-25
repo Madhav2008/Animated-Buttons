@@ -203,7 +203,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-          Row(
+          Row(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               LikeButton(
                 size: 80,
