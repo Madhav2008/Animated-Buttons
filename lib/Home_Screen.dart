@@ -343,38 +343,35 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(right: 10.0),
-                child: LikeButton(
-                  size: 80,
-                  circleColor: const CircleColor(
-                    start: Colors.green,
-                    end: Colors.greenAccent,
-                  ),
-                  bubblesColor: BubblesColor(
-                    dotPrimaryColor: Colors.green.shade200,
-                    dotSecondaryColor: Colors.green.shade300,
-                  ),
-                  likeCount: numberOfLikes,
-                  countPostion: CountPostion.bottom,
-                  likeBuilder: ((isTapped) {
-                    return Icon(
-                      Icons.whatsapp,
-                      color: isTapped ? Colors.green : Colors.grey,
-                      size: 80,
-                    );
-                  }),
-                  countBuilder: (count, isLiked, text) {
-                    return Text(
-                      text,
-                      style: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    );
-                  },
+              LikeButton(
+                size: 80,
+                circleColor: const CircleColor(
+                  start: Colors.green,
+                  end: Colors.greenAccent,
                 ),
+                bubblesColor: BubblesColor(
+                  dotPrimaryColor: Colors.green.shade200,
+                  dotSecondaryColor: Colors.green.shade300,
+                ),
+                likeCount: numberOfLikes,
+                countPostion: CountPostion.bottom,
+                likeBuilder: ((isTapped) {
+                  return Icon(
+                    Icons.whatsapp,
+                    color: isTapped ? Colors.green : Colors.grey,
+                    size: 80,
+                  );
+                }),
+                countBuilder: (count, isLiked, text) {
+                  return Text(
+                    text,
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  );
+                },
               ),
               LikeButton(
                 size: 80,
