@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     dotSecondaryColor: Colors.black54,
                   ),
                   likeCount: numberOfLikes,
-                  countPostion: CountPostion.bottom,
+                  countPostion: CountPostion.left,
                   likeBuilder: ((isTapped) {
                     return Icon(
                       Icons.cloud,
