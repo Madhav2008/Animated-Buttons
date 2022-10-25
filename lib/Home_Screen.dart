@@ -13,11 +13,14 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int numberOfLikes = 120;
 
-  Gradient gmail =  LinearGradient(
-               colors: [Colors.purple, Colors.blue,],
-              begin: Alignment.bottomLeft,
-               end: Alignment.topRight,
-          );
+  Gradient gmail = LinearGradient(
+    colors: [
+      Colors.purple,
+      Colors.blue,
+    ],
+    begin: Alignment.bottomLeft,
+    end: Alignment.topRight,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -199,7 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 likeBuilder: ((isTapped) {
                   return Icon(
                     Icons.mail,
-                    color: isTapped ? Colors.green: Colors.grey,
+                    color: isTapped ? Colors.green : Colors.grey,
                     size: 80,
                   );
                 }),
