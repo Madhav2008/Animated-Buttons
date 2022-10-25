@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int numberOfLikes = 120;
 
   Gradient gmail =  LinearGradient(
-               colors: [Colors.purple, Colors.blue],
+               colors: [Colors.purple, Colors.blue,],
               begin: Alignment.bottomLeft,
                end: Alignment.topRight,
           );
