@@ -146,7 +146,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     if (count == 0) {
                       result = Text(
                         'love',
-                        style: TextStyle(color: Colors.grey),
+                        style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                       );
                     } else
                       result = Text(
