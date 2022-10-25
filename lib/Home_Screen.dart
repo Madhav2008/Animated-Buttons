@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   start: Color(0xff00ddff),
                   end: Color(0xff0099cc),
                 ),
-                bubblesColor: BubblesColor(
+                bubblesColor: const BubblesColor(
                   dotPrimaryColor: Color(0xff33b5e5),
                   dotSecondaryColor: Color(0xff0099cc),
                 ),
