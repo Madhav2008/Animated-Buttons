@@ -310,35 +310,38 @@ class _HomeScreenState extends State<HomeScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              LikeButton(
-                size: 80,
-                circleColor: const CircleColor(
-                  start: Colors.deepPurple,
-                  end: Colors.deepPurpleAccent,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: LikeButton(
+                  size: 80,
+                  circleColor: const CircleColor(
+                    start: Colors.deepPurple,
+                    end: Colors.deepPurpleAccent,
+                  ),
+                  bubblesColor: BubblesColor(
+                    dotPrimaryColor: Colors.deepPurple.shade200,
+                    dotSecondaryColor: Colors.deepPurple.shade300,
+                  ),
+                  likeCount: numberOfLikes,
+                  countPostion: CountPostion.bottom,
+                  likeBuilder: ((isTapped) {
+                    return Icon(
+                      Icons.camera_alt_outlined,
+                      color: isTapped ? Colors.deepPurple : Colors.grey,
+                      size: 80,
+                    );
+                  }),
+                  countBuilder: (count, isLiked, text) {
+                    return Text(
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  },
                 ),
-                bubblesColor: BubblesColor(
-                  dotPrimaryColor: Colors.deepPurple.shade200,
-                  dotSecondaryColor: Colors.deepPurple.shade300,
-                ),
-                likeCount: numberOfLikes,
-                countPostion: CountPostion.bottom,
-                likeBuilder: ((isTapped) {
-                  return Icon(
-                    Icons.camera_alt_outlined,
-                    color: isTapped ? Colors.deepPurple : Colors.grey,
-                    size: 80,
-                  );
-                }),
-                countBuilder: (count, isLiked, text) {
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
               ),
               LikeButton(
                 size: 80,
