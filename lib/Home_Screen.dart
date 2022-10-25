@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'ANIMATED BUTTON',
+          'ANIMATED BUTTONS',
           style: TextStyle(
             letterSpacing: 3,
           ),
