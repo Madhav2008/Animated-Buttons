@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int numberOfLikes = 120;
 
-  Color gmail = LinearGradient(
+  Color gmail = gradient: LinearGradient(
     colors: [
       Colors.purple,
       Colors.blue,
