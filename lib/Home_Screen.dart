@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 size: 80,
                 circleColor: const CircleColor(
                   start: Colors.greenAccent,
-                  end: Colors.deepPurpleAccent,
+                  end: Colors.greenAccent,
                 ),
                 bubblesColor: BubblesColor(
                   dotPrimaryColor: Colors.greenAccent.shade200,
