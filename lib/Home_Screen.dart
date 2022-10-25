@@ -193,7 +193,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 likeBuilder: ((isTapped) {
                   return Icon(
                     Icons.mail,
-                    color: isTapped ? Colors. : Colors.grey,
+                    color: isTapped ? gradient: LinearGradient(
+               colors: [Colors.purple, Colors.blue],
+              begin: Alignment.bottomLeft,
+               end: Alignment.topRight,
+          ), Colors.grey,
                     size: 80,
                   );
                 }),
