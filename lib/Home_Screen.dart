@@ -153,7 +153,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         count! >= 1000
                             ? (count / 1000.0).toStringAsFixed(1) + 'k'
                             : text,
-                        style: TextStyle(color: Colors.grey),
+                        style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                       );
                     return Text(
                       text,
