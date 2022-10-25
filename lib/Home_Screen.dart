@@ -26,20 +26,24 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
       ),
       body: Center(
-        child: LikeButton(
-          size: 80,
-          likeCount: numberOfLikes,
-          countPostion: CountPostion.bottom,
-          countBuilder: (count, isLiked, text) {
-            return Text(
-              text,
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            );
-          },
+        child: Column(
+          children: [
+            LikeButton(
+              size: 80,
+              likeCount: numberOfLikes,
+              countPostion: CountPostion.bottom,
+              countBuilder: (count, isLiked, text) {
+                return Text(
+                  text,
+                  style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                );
+              },
+            ),
+          ],
         ),
       ),
     );
