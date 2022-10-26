@@ -381,7 +381,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       size: 80,
                     );
                   }),
-                  
                 ),
               ],
             ),
