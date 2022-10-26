@@ -36,7 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 LikeButton(
                   size: 80,
                   likeCount: numberOfLikes,
-                  countPostion: CountPostion.bottom,animationDuration: Duration(seconds: 3),
+                  countPostion: CountPostion.bottom,
+                  animationDuration: Duration(seconds: 3),
                   countBuilder: (count, isLiked, text) {
                     return Text(
                       text,
