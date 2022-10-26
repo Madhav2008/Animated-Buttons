@@ -349,7 +349,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     dotPrimaryColor: Colors.blueGrey.shade200,
                     dotSecondaryColor: Colors.blueGrey.shade300,
                   ),
-                  countPostion: CountPostion.top,
                   likeBuilder: ((isTapped) {
                     return Icon(
                       Icons.mail_outline,
