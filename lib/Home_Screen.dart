@@ -358,31 +358,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       size: 80,
                     );
                   }),
-                  countBuilder: (count, isLiked, text) {
-                    Widget result;
-                    if (count == 0) {
-                      result = const Text(
-                        'Click Me',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      );
-                    } else {
-                      result = Text(
-                        count! >= 1000
-                            ? '${(count / 1000.0).toStringAsFixed(1)}k'
-                            : text,
-                        style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      );
-                    }
-                    return result;
-                  },
+                  
                 ),
                 const SizedBox(
                   width: 20,
