@@ -348,7 +348,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   dotPrimaryColor: Colors.deepPurple.shade200,
                   dotSecondaryColor: Colors.deepPurple.shade300,
                 ),
-                likeCount: numberOfLikes,
+                likeCount: numberOfLikes1,
                 countPostion: CountPostion.top,
                 likeBuilder: ((isTapped) {
                   return Icon(
