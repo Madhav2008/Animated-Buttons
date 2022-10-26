@@ -284,7 +284,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   likeBuilder: ((isTapped) {
                     return Icon(
-                      Icons.star_border,
+                      Icons.star,
                       color: isTapped ? Colors.amber : Colors.grey,
                       size: 80,
                     );
