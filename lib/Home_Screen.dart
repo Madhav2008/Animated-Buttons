@@ -188,13 +188,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   }),
                   countBuilder: (count, isLiked, text) {
                     return Text(
-                    text,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
+                      text,
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
                   },
                 ),
                 const SizedBox(
