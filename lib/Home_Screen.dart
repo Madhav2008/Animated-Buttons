@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
             letterSpacing: 3,
           ),
         ),
-        elevation: 10,
+        elevation: 100,
         centerTitle: true,
       ),
       body: Column(
