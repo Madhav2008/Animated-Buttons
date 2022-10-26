@@ -372,7 +372,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     dotPrimaryColor: Colors.purple.shade200,
                     dotSecondaryColor: Colors.purple.shade300,
                   ),
-                  countPostion: CountPostion.top,
                   likeBuilder: ((isTapped) {
                     return Icon(
                       Icons.currency_rupee,
