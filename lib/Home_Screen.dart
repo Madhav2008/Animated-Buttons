@@ -38,14 +38,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   likeCount: numberOfLikes,
                   countPostion: CountPostion.bottom,
                   countBuilder: (count, isLiked, text) {
-                    return Text(
-                      text,
-                      style: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    );
+                    Widget result;
+                    if (count == 0) {
+                      result = const Text(
+                        'Click Me',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      );
+                    } else {
+                      result = Text(
+                        count! >= 1000
+                            ? '${(count / 1000.0).toStringAsFixed(1)}k'
+                            : text,
+                        style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      );
+                    }
+                    return result;
                   },
                 ),
                 const SizedBox(
