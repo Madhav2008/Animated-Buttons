@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
           style: TextStyle(
             letterSpacing: 3,
           ),
-        ),
+        ),elevation: ,
         centerTitle: true,
       ),
       body: Column(
