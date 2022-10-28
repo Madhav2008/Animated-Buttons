@@ -1,6 +1,6 @@
 # Animated Buttons
 
-Languages Used | .
+Languages Used | 
 :-------------------------:|:-------------------------:
 ![image](https://user-images.githubusercontent.com/72864817/197387148-8ec93d13-179e-4d15-852f-baf0aab7b899.png)|![favicon](https://user-images.githubusercontent.com/72864817/198569186-a9adc9d3-dd6f-4ada-a283-bc246c1cb1d1.png)
 
